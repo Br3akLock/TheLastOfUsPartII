@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+* {
+    user-select: none;
+    /*user-select: none; Não deixa selecionar*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+section {
+    color: white;
+    width: 100%;
+    height: 100vh;
+    background: url('../Images/background.jpg') no-repeat; 
+    background-size: cover;
+    background-position: center;
+    column-gap: 30px;
+}
+section .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 5%;
+}
+section .header .nav_links {
+    list-style: none;
+}
+section .header .nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+section .header .nav_links li a {
+    color: white;
+    transition: all 0.3s ease 0s;
+}
+section .header .nav_links li a:hover {
+    color: rgb(234, 61, 93);
+}
+section .header .icons li {
+    display: inline-block;
+}
+section .header .icons li a {
+    color: white;
+    list-style: none;
+}
+section .header .icons li a ion-icon {
+    font-size: 1.25em;
+    padding: 0 15px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+section .header .icons li a ion-icon:hover {
+    color: rgb(234, 61, 93);
+}
+section .header button {
+    padding: 9px 25px;
+    background: linear-gradient(45deg, rgb(234, 61, 93), rgb(219, 81, 108));
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+section .header button:hover {
+    filter: brightness(1.1);
+}
+section .main .description {
+    position: absolute;
+    bottom: 20px;
+    font-size: .9em;
+    width: 35%;
+    padding: 30px 2.5%;
+}
+section .main .description .price {
+    font-size: .8em;
+    margin-bottom: 10px;
+}
+section .main .description .filmname {
+    font-size: 1.3em;
+}
+section .main .description .filmname::before {
+    content: "";
+    position: absolute;
+    width: 45px;
+    left: 15px;
+    border-bottom: 5px solid rgb(234, 61, 93);
+    top: 85px
+}
+section .main .description .platforms {
+    margin: 15px 0px 7px 0;
+}
+section .main .description .platforms ion-icon {
+    color: yellow;
+    margin-right: 5px;
+}
+section .main .description .platforms span {
+    margin-left: 10px;
+}
+section .main .description .genre {
+    margin: 10px 0px;
+}
+section .main .description .platforms span .red,
+section .main .description .genre .red {
+    color: rgb(234, 61, 93);
+    margin: 0px 5px;
+}
+section .main .description .filmdescription {
+    margin: 10px 0px;
+}
+section .main .description .buy {
+    margin: 15px 0px;
+}
+section .main .description .buy ion-icon {
+    font-size: 1.25em;
+    padding: 0 25px 0 0;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+section .main .description .buy ion-icon:nth-child(1) {
+    margin-left: 0px;
+}
+section .main .description .buy ion-icon:nth-child(3) {
+    margin-right: 20px;
+}
+section .main .description .buy ion-icon:hover {
+    color: rgb(234, 61, 93);
+}
+section .main .description .buy button {
+    padding: 7px 25px;
+    background: #66D9A3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+section .main .description .buy button:hover {
+    filter: brightness(1.1);
+}
+
+
+section .main .scenes {
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    font-size: .9em;
+    width: 22%;
+    padding: 30px 0 30px 2.5% ;
+}
+section .main .scenes .title {
+    margin-bottom: 20px;
+    font-size: 1.4em;
+}
+
+section .main .scenes .title::before {
+    content: "";
+    position: absolute;
+    border-bottom: 5px solid rgb(234, 61, 93);
+    width: 50px;
+    left: 15px;
+    top: 62px
+}
+iframe {
+    width: 210px; 
+    height: 120px;
+}
+footer {
+    width: 100%;
+    height: 30px;
+    color: rgb(106, 106, 106);
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p ion-icon:nth-child(1),
+footer p ion-icon:nth-child(2),
+footer p ion-icon:nth-child(6) {
+    color: white;
+}
